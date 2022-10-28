@@ -13,6 +13,10 @@ interface DateTimeInterface extends ValueObjectInterface, Stringable
 
     public function removeInterval(int $seconds): DateTimeInterface;
 
+    public function dayOfPastMonth(int $dayOfMonth, int $monthsAgo, TimezoneInterface $timezone, string $time = '00:00:00'): DateTimeInterface;
+
+    public function lastDayOfPastMonth(int $monthsAgo, TimezoneInterface $timezone, string $time = '00:00:00'): DateTimeInterface;
+
     public function firstDayOfLastMonth(TimezoneInterface $timezone, string $time = '00:00:00'): DateTimeInterface;
 
     public function firstDayOfNextMonth(TimezoneInterface $timezone, string $time = '00:00:00'): DateTimeInterface;
