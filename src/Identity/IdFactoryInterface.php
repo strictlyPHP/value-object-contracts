@@ -4,5 +4,5 @@ namespace StrictlyPHP\Value\Contracts\Identity;
 
 interface IdFactoryInterface
 {
-    public function generateNewId() : IdInterface;
+    public function generateNewUuId() : UuIdInterface;
 }

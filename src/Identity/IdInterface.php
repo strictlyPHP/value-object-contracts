@@ -10,6 +10,4 @@ use Stringable;
 interface IdInterface extends ValueObjectInterface, Stringable
 {
     public function getValue(): string;
-
-    public function isUuid(): bool;
 }
