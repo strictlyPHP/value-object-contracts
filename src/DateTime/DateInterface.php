@@ -14,4 +14,10 @@ interface DateInterface extends ValueObjectInterface, Stringable
     public function toPhpDateTime(): \DateTime;
 
     public static function fromPhpDateTime(\DateTime $dateTime): self;
+
+    public function getYear(): int;
+
+    public function getMonth(): int;
+
+    public function getDay(): int;
 }
