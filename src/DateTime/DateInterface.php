@@ -29,6 +29,4 @@ interface DateInterface extends ValueObjectInterface, Stringable
     public function addMonths(int $months): self;
 
     public function addYears(int $years): self;
-
-    public function getTimezone(): TimezoneInterface;
 }
